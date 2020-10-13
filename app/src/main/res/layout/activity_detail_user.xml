@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_item_avatar"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="20dp"
+        android:layout_centerHorizontal="true"
+        tools:src="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/tv_item_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/img_item_avatar"
+        android:gravity="center"
+        android:text="@string/heroes_name" />
+
+    <TextView
+        android:id="@+id/tv_item_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:textStyle="normal"
+        android:focusable="true"
+        android:clickable="true"
+        android:layout_below="@+id/tv_item_name"
+        android:gravity="center"
+        android:text="@string/heroes_username" />
+
+    <TextView
+        android:id="@+id/tv_item_company"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        android:layout_below="@+id/tv_item_username"
+        android:gravity="center"
+        android:text="@string/heroes_company" />
+
+    <TextView
+        android:id="@+id/tv_item_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        android:layout_below="@+id/tv_item_company"
+        android:gravity="center"
+        android:text="@string/heroes_location" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_item_location"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="12dp" >
+
+        <TextView
+            android:id="@+id/tv_item_repository"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:layout_marginEnd="20dp"
+            android:text="@string/heroes_repository" />
+        <TextView
+            android:id="@+id/tv_item_follower"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:layout_marginEnd="20dp"
+            android:text="@string/heroes_follower" />
+        <TextView
+            android:id="@+id/tv_item_following"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:layout_marginEnd="20dp"
+            android:text="@string/heroes_following"/>
+    </LinearLayout>
+</RelativeLayout>
