@@ -19,7 +19,7 @@ class DetailUserActivity : AppCompatActivity() {
         setContentView(R.layout.activity_detail_user)
 
         val actionBar = supportActionBar
-        actionBar!!.title = "User Detail"
+        actionBar?.title = "User Detail"
 
         val user = intent.getParcelableExtra<User>(EXTRA_USER) as User
 
